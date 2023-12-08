@@ -129,9 +129,9 @@ app.get('/', autenticar, (requisicao, resposta) => {
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                         <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="/">Início</a></li>
-                        <li><a class="nav-link" href="/formulario.html">Cadastro de Usuário</a></li>
-						<li><a class="nav-link" href="/batepapo.html">Bate-papo</a></li>
+                            <li><a class="nav-link active" href="/">Início</a></li>
+                            <li><a class="nav-link" href="/formulario.html">Cadastro de Usuário</a></li>
+                            <li><a class="nav-link" href="/batepapo.html">Bate-papo</a></li>
                         </ul>
                     </div>
                 </div>
