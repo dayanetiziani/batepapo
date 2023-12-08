@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "trablho final disciplina PPI - desenvolvendo um sistema web para uma sala de bate-papo",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "https://github.com/dayanetiziani/batepapo.git"
+    "test": "https://github.com/dayanetiziani/batepapo.git",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "(https://github.com/dayanetiziani/batepapo.git)"
   },
   "author": "Dayane Tiziani Boa Ventura",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
 }
