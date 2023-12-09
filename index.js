@@ -344,7 +344,7 @@ function processaCadastroUsuario(requisicao, resposta){
             }
             conteudoResposta+=`
                             <div class=" form-group col-md-12">
-                                <button class="hvr-radial-out button-theme" type="submit">Cadastrar Usuário</button>
+                                <button class="nav-link" type="submit">Cadastrar Usuário</button>
                             </div>
                                                                         
                                     </form>
@@ -513,7 +513,7 @@ function processaCadastroUsuario(requisicao, resposta){
             conteudoResposta+= `
                         </tbody>      
                         </table>
-                            <a button type="button" class="nav-link" href="/">Página Inicial</button>
+                            <a type="button" class="nav-link" href="/">Página Inicial</a>
                             <a class="nav-link" href="/formulario.html" role="button">Continuar cadastrando</a>
                     </div>
                 </div>
