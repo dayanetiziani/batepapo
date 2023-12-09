@@ -62,6 +62,7 @@
                     <li><a class="nav-link " href="/">Início</a></li>
                     <li><a class="nav-link " href="/formulario.html">Cadastro de Usuário</a></li>
                     <li><a class="nav-link active" href="/batepapo.html">Bate-papo</a></li>
+                    <li><a class="nav-link" href="/login.html">Sair</a></li>
                 </ul>
             </div>
         </div>
@@ -81,9 +82,78 @@
             </div>
         </div>
         <div class="row">
-            <p>TESTE</p>
-           <!-- fazer aqui o chat-->  
+             <!-- lista cadastros -->
+        
+            <div class="container">
+                <div style="overflow-y:scroll; height:300px; overflow-x: hidden;">
+                    <div class="row">
+                    
+                        <div class="col-lg-3 col-sm-3 col-xs-12">
+                            <div class="left-contact">
+                                <div class="media cont-line">
+                                    <div class="media-left icon-b">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body dit-right">
+                                        <h4>Day</h4>
+                                        <p>09/12/2023 16:27</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-xs-12">
+                            <div class="left-contact">
+                                <div class="media cont-line">
+            
+                                    <div class="media-body dit-right">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="contact-block">
+                          <form id="contactForm" novalidate="true">
+                            <div class="row">
+                              <div class="col-md-3">
+                                  <div class="form-group has-error">
+                                    <select name="cars" id="cars" class="form-control">
+                                        <option value="" disabled selected>Selecione um usuário</option>
+                                        <option value="Day">Day</option>
+                                        <option value="Jota">Jota</option>
+                                        <option value="Lara">Lara</option>
+                                      </select>
+                                      <!-- <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="" data-error="Please enter your name"> -->
+                                      <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please enter your name</li></ul></div> -->
+                                  </div>                                 
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group has-error">
+                                      <input type="text" placeholder="Digite sua mensagem..." id="mensagem" class="form-control" name="mensagem" required="" data-error="Por favor digite uma mensagem">
+                                      <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please enter your email</li></ul></div> -->
+                                  </div> 
+                              </div>
+                              
+                              <div class="col-md-3">
+                                  <div class="submit-button text-center">
+                                      <button class="btn btn-common disabled" id="submit" type="submit" style="pointer-events: all; cursor: pointer;">Enviar</button>
+                                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                      <div class="clearfix"></div> 
+                                  </div>
+                              </div>
+                            </div>            
+                          </form>
+                        </div>
+                      </div>
+                </div>
+            </div>
         </div>
+            <!-- fim lista cadastros -->
     </div>
 </div>
 <!-- fim lista cadastros -->

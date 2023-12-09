@@ -1,2 +1,11 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+.form-control {
+    color:aliceblue;
+    background-color: #666666;
+}
+
+.form-control:focus {
+    color:aliceblue;
+    background-color: #666666;
+}
