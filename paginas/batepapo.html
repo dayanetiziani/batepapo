@@ -87,7 +87,6 @@
             <div class="container">
                 <div style="overflow-y:scroll; height:300px; overflow-x: hidden;">
                     <div class="row">
-                    
                         <div class="col-lg-3 col-sm-3 col-xs-12">
                             <div class="left-contact">
                                 <div class="media cont-line">
@@ -118,11 +117,11 @@
                 <div class="row">
                     <div class="col-lg-12 col-sm-12 col-xs-12">
                         <div class="contact-block">
-                          <form id="contactForm" novalidate="true">
+                          <form method="post" action="/batepapo" novalidate="true">
                             <div class="row">
                               <div class="col-md-3">
                                   <div class="form-group has-error">
-                                    <select name="cars" id="cars" class="form-control">
+                                    <select name="usuario" id="usuario" class="form-control">
                                         <option value="" disabled selected>Selecione um usuário</option>
                                         <option value="Day">Day</option>
                                         <option value="Jota">Jota</option>
@@ -142,7 +141,7 @@
                               <div class="col-md-3">
                                   <div class="submit-button text-center">
                                       <button class="btn btn-common disabled" id="submit" type="submit" style="pointer-events: all; cursor: pointer;">Enviar</button>
-                                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                      <!-- <div id="msgSubmit" class="h3 text-center hidden"></div>  -->
                                       <div class="clearfix"></div> 
                                   </div>
                               </div>
