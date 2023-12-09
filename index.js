@@ -79,7 +79,7 @@ app.get('/', autenticar, (requisicao, resposta) => {
         <!-- Mobile Metas -->
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
      
-         <!-- Site Metas -->
+        <!-- Site Metas -->
         <title>Merry | Início</title>  
         <meta name="keywords" content="">
         <meta name="description" content="">
