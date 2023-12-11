@@ -58,6 +58,7 @@
     ................................................. */
 	
 	$(document).ready(function() {
+		console.log(requisicao.session);
 		$('.popup-gallery').magnificPopup({
 			delegate: 'a',
 			type: 'image',
