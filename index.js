@@ -28,6 +28,8 @@ const app = express();
 //ativando a funcionalidade de manipular cookies
 app.use(cookieParser());
 
+app.enable('trust proxy');
+
 //adicionar uma nova capacidade para essa aplicação: memorizar com que o servidor está falando
 //durante o uso do sistema, a aplicação saberá, dentro de uma aplicação válida, com quem ela se comunica.
 app.use(session({
@@ -36,6 +38,9 @@ app.use(session({
     saveUninitialized: true,
     cookie:{
         //tempo de vida da sessão
+         httpOnly: false,
+         secure: false,
+         sameSite: false,
         maxAge: 1000 * 60 * 30 //30 minutos
     }
 
