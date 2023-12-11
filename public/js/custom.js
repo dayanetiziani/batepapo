@@ -118,5 +118,11 @@
 		}
 	});
 
-	
+	$('.form-control').on('focus', function() {
+		let helpblocks = document.getElementsByClassName("help-block");
+		for (let i = 0; i < helpblocks.length; i++) {
+			helpblocks[i].style.display = "none";
+		}
+	});
+
 }(jQuery));

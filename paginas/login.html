@@ -45,7 +45,7 @@
                         <div class="col-lg-12">
                             <div class="title-box">
                                 <h2>Merry</h2>
-                                <p>Explore a magia do encontro online! Bem-vindo ao nosso bate-papo natalino, onde conexões encantadoras acontecem. Desperte a alegria, compartilhe sorrisos e celebre o Natal conosco. Entre para viver experiências únicas e construir memórias inesquecíveis. Feliz Natal!"</p>
+                                <p>Explore a magia do encontro online! Bem-vindo ao nosso bate-papo natalino, onde conexões encantadoras acontecem. Desperte a alegria, compartilhe sorrisos e celebre o Natal conosco. Entre para viver experiências únicas e construir memórias inesquecíveis. Feliz Natal!</p>
                             </div>
                         </div>
                     </div>
@@ -54,25 +54,44 @@
                             <div class="row align-items-center about-main-info">
                                 
                                 <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
-                                <div class="full">
-                                    <img class="img-responsive" src="images/w1.png" alt="#" />
-                                </div>
+                                    <div class="full">
+                                        <img class="img-responsive" src="images/w1.png" alt="#" />
+                                    </div>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Bate-papo Natalino</h2>
-                                    <form action='/login' method='post' class="row g-3 needs-validation" novalidate>
-                                        <label for="usuario" class="form-label">Usuário:</label>
-                                        <input type="text" class="form-control" id="usuario" name="usuario" required><!--name pq é o nome ou identificação do valor-->
-                                        <label for="senha" class="form-label">Senha:</label>
-                                        <input type="password" class="form-control" id="senha" name="senha" required><!--name pq é o nome ou identificação do valor-->
-                                    
-                                        <button class="hvr-radial-out button-theme" type="submit">Login</button>
-                                    </form>
+           
+                                    <div class="contact-block">
+                                        <form action='/login' method='post' id="loginForm" novalidate="true">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group has-error">
+                                                        <input type="text" placeholder="Usuário" id="usuario" name="usuario" class="form-control" required="" data-error="Please enter your number">
+                                                        <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please enter your number</li></ul></div> -->
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group has-error">
+                                                        <input type="password" placeholder="Senha" id="senha" class="form-control" name="senha" required="" data-error="Please enter your number">
+                                                        <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please enter your number</li></ul></div> -->
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="submit-button text-center">
+                                                        <button class="btn btn-common disabled" id="submit" type="submit" style="pointer-events: all; cursor: pointer;">Entrar</button>
+                                                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                                        <div class="clearfix"></div> 
+                                                    </div>
+                                                </div>
+                                            </div>            
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div> 
         </div>

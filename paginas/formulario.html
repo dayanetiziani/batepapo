@@ -47,7 +47,7 @@
     <!-- END LOADER -->
 	<!-- Start header -->
 	<header class="top-header">
-		<nav class="navbar header-nav navbar-expand-lg">
+		<nav class="navbar header-nav navbar-expand-lg fixed-top">
             <div class="container">
 				<a class="navbar-brand"><img src="images/logo.png" alt="image"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,41 +78,45 @@
                             
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <h2><img style="width: 50px;" src="images/head_s.png" alt="#" /> Cadastro de Usuário</h2>
-                                    <div class="container">
-                                        <fieldset class="border p-2" style="border-color: black;">
-                                            
-                                            <form action='/lista' method='post' class="row g-3 needs-validation" novalidate>
-                                                
-                                              <div class="form-group col-md-12">
-                                                <label for="nome" class="form-label">Nome:</label>
-                                                <input type="text" class="form-control" id="nome" name="nome" required><!--name pq é o nome ou identificação do valor-->
-                                              </div>
-                                              
-                                              <div class="form-group col-md-5">
-                                                <label for="nascimento" class="form-label">Data de Nascimento:</label>
-                                                <input type="date" class="form-control" id="nascimento" name="nascimento" required><!--name pq é o nome ou identificação do valor-->
-                                              </div>
-                              
-                                              <div class="form-group col-md-7">
-                                                  <label for="apelido" class="form-label">Nickname ou apelido:</label>
-                                                  <input type="text" class="form-control" id="apelido" name="apelido" required><!--name pq é o nome ou identificação do valor-->
-                                              </div>
-                                              <div class=" form-group col-md-12">
-                                                <button class="hvr-radial-out button-theme" type="submit">Cadastrar Usuário</button>
-                                              </div>
-                                                
-                                            </form>
-                                        </fieldset> 
-                                    </div>
-                                    
-                                </div>
 
+
+                                    <div class="contact-block">
+                                        <form action='/lista' method='post' id="cadastroForm" novalidate="true">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group has-error">
+                                                        <input type="text" placeholder="nome" id="nome" name="nome" class="form-control" required="" data-error="Please enter your number">
+                                                        <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please enter your number</li></ul></div> -->
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="form-group has-error">
+                                                        <input type="date" id="nascimento" class="form-control" name="nascimento" required="" data-error="Please enter your number">
+                                                        <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please enter your number</li></ul></div> -->
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="form-group has-error">
+                                                        <input type="text" placeholder="apelido" id="apelido" class="form-control" name="apelido" required="" data-error="Please enter your number">
+                                                        <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please enter your number</li></ul></div> -->
+                                                    </div> 
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="submit-button text-center">
+                                                        <button class="btn btn-common disabled" id="submit" type="submit" style="pointer-events: all; cursor: pointer;">Cadastrar</button>
+                                                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                                        <div class="clearfix"></div> 
+                                                    </div>
+                                                </div>
+                                            </div>            
+                                        </form>
+                                    </div> 
+                                </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
                                 <div class="full">
-                                        <img class="img-responsive" src="images/w2.png" alt="#" />
+                                    <img class="img-responsive" src="images/w2.png" alt="#" />
                                 </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
