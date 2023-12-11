@@ -56,8 +56,6 @@ app.use(express.static(path.join(process.cwd(),'paginas')));
 app.use(express.static(path.join(process.cwd(),'public')));
 //pseudo middleware
 function autenticar(requisicao, resposta, next){
-    console.log(requisicao.session);
-    console.log(requisicao.session.usuarioAutenticado);
     if(requisicao.session.usuarioAutenticado){
         next();
     }
