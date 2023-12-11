@@ -32,14 +32,14 @@ app.use(cookieParser());
 //durante o uso do sistema, a aplicação saberá, dentro de uma aplicação válida, com quem ela se comunica.
 app.use(session({
     secret:"M1nH4Ch4v3S3cR3t4",
-    resave: false, //atualiza a sessão mesmo que não há alteração a cada requisição
+    resave: true, //atualiza a sessão mesmo que não há alteração a cada requisição
     saveUninitialized: true,
-    proxy: true,
+    //proxy: true,
     cookie:{
         //tempo de vida da sessão
-         httpOnly: false,
-         secure: true,
-         sameSite: 'none',
+        //  httpOnly: false,
+        //  secure: true,
+        //  sameSite: 'none',
         maxAge: 1000 * 60 * 30 //30 minutos
     }
 }))
