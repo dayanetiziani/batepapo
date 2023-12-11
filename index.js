@@ -50,7 +50,7 @@ app.use(express.urlencoded({extended: true}));
 //app.use(express.static('./paginas'));
 app.use(express.static(path.join(process.cwd(),'paginas')));
 
-app.use(express.static('public'))
+app.use(express.static(path.join(process.cwd(),'public')));
 //pseudo middleware
 function autenticar(requisicao, resposta, next){
     if(requisicao.session.usuarioAutenticado){
