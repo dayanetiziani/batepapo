@@ -689,6 +689,7 @@ function exibeBatepapo(requisicao, resposta){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
    
     <!-- Mobile Metas -->
+    <script src="index.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
@@ -916,6 +917,7 @@ function processaBatepapo (requisicao, resposta) {
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
+    <script src="index.js" type="text/javascript"></script>
     <title>Merry | Chat</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
