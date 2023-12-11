@@ -28,22 +28,20 @@ const app = express();
 //ativando a funcionalidade de manipular cookies
 app.use(cookieParser());
 
-app.enable('trust proxy');
-
 //adicionar uma nova capacidade para essa aplicação: memorizar com que o servidor está falando
 //durante o uso do sistema, a aplicação saberá, dentro de uma aplicação válida, com quem ela se comunica.
 app.use(session({
     secret:"M1nH4Ch4v3S3cR3t4",
-    resave: true, //atualiza a sessão mesmo que não há alteração a cada requisição
+    resave: false, //atualiza a sessão mesmo que não há alteração a cada requisição
     saveUninitialized: true,
+    proxy: true,
     cookie:{
         //tempo de vida da sessão
          httpOnly: false,
-         secure: false,
-         sameSite: false,
+         secure: true,
+         sameSite: 'none',
         maxAge: 1000 * 60 * 30 //30 minutos
     }
-
 }))
 
 //ativar a extensão que manipula requisições HTTP
